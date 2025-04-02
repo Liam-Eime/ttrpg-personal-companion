@@ -40,7 +40,7 @@ This companion is tailored for a single campaign:
 | Layer     | Tool                                   |
 |-----------|----------------------------------------|
 | Frontend  | React + Vite + TailwindCSS             |
-| Backend   | Express (Node.js) or FastAPI (TBD)       |
+| Backend   | Express (Node.js) or FastAPI (TBD)     |
 | Database  | Supabase (PostgreSQL + Auth)           |
 | Hosting   | Vercel (frontend), Render (backend)    |
 | CI/CD     | GitHub Actions                         |
@@ -70,14 +70,14 @@ ttrpg-personal-companion/
 
 - **Clone the repository:**
 
-  ```
+  ```bash
   git clone <https://github.com/YOUR_USERNAME/ttrpg-personal-companion.git>  
   cd ttrpg-personal-companion
   ```
 
 - **Switch to the dev branch:**
 
-  ```
+  ```bash
   git checkout -b dev  
   git push -u origin dev
   ```
@@ -85,14 +85,16 @@ ttrpg-personal-companion/
 - **(Later) Run the frontend/backend locally:**
 
   - Frontend:
-    ```
+
+    ```bash
     cd frontend  
     npm install  
     npm run dev
     ```
 
   - Backend:
-    ```
+
+    ```bash
     cd backend  
     npm install  
     npm run dev
@@ -108,7 +110,8 @@ ttrpg-personal-companion/
 | dev    | Active development & staging    |
 
 To merge dev into main (when ready):
-  ```
+
+  ```bash
   git checkout main  
   git merge dev  
   git push origin main
