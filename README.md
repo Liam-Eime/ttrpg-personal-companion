@@ -31,6 +31,7 @@ This companion is tailored for a single campaign:
 - Role-based permissions: Only authorized users can modify data
 - Real-time hosted, mobile-friendly UI
 - Markdown support for rich lore & note formatting
+- Initiative tracker for DM & players
 
 ---
 
@@ -69,25 +70,33 @@ ttrpg-personal-companion/
 
 - **Clone the repository:**
 
+  ```
   git clone <https://github.com/YOUR_USERNAME/ttrpg-personal-companion.git>  
   cd ttrpg-personal-companion
+  ```
 
 - **Switch to the dev branch:**
 
+  ```
   git checkout -b dev  
   git push -u origin dev
+  ```
 
 - **(Later) Run the frontend/backend locally:**
 
-  - Frontend:  
+  - Frontend:
+    ```
     cd frontend  
     npm install  
     npm run dev
+    ```
 
-  - Backend:  
+  - Backend:
+    ```
     cd backend  
     npm install  
     npm run dev
+    ```
 
 ---
 
@@ -99,10 +108,11 @@ ttrpg-personal-companion/
 | dev    | Active development & staging    |
 
 To merge dev into main (when ready):
-
+  ```
   git checkout main  
   git merge dev  
   git push origin main
+  ```
 
 ---
 
