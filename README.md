@@ -1,4 +1,4 @@
-# TTRPG Personal Companion for The Chronicles of The Progenitor.
+# TTRPG Personal Companion for The Chronicles of The Progenitor
 
 A free, cloud-hosted web application designed specifically for The Chronicles of The Progenitor tabletop RPG campaign.  
 This tool helps the DM and players track character stats, lore, session history, and more—keeping the campaign organized and the story alive.
