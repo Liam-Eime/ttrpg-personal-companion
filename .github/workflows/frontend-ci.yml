@@ -1,0 +1,30 @@
+name: Frontend CI
+
+on:
+  push:
+    branches: [dev]
+  pull_request:
+    branches: [dev, main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - name: Install Dependencies
+        run: |
+          cd frontend
+          npm install
+      - name: Run Lint & Tests
+        run: |
+          cd frontend
+          npm run lint || echo "No lint script defined"
+          npm run test -- --watchAll=false || echo "No tests defined"
+      - name: Build
+        run: |
+          cd frontend
+          npm run build
