@@ -3,10 +3,10 @@ import { useState } from 'react';
 import { useAuth } from '../contexts/useAuth';
 
 // For local development, use:
-const API_URL = 'http://localhost:3000';
+// const API_URL = 'http://localhost:3000';
 
 // When ready for production, switch to:
-// const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
 
 export default function CharacterForm() {
   // Get user from AuthContext
