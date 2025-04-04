@@ -6,7 +6,7 @@ import { useAuth } from '../contexts/useAuth';
 // const API_URL = 'http://localhost:3000';
 
 // When ready for production, switch to:
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+const API_URL = import.meta.env.VITE_API_URL;
 
 export default function CharacterForm() {
   // Get user from AuthContext
